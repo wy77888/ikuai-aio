@@ -102,8 +102,8 @@ type HomepageShowSysStatResp struct {
 				ConnectNum int   `json:"connect_num"`
 				Upload     int   `json:"upload"`
 				Download   int   `json:"download"`
-				TotalUp    int64 `json:"total_up"`
-				TotalDown  int64 `json:"total_down"`
+				TotalUp    float64 `json:"total_up"`
+				TotalDown  float64 `json:"total_down"`
 			} `json:"stream"`
 			Uptime  int `json:"uptime"`
 			VerInfo struct {
@@ -157,8 +157,8 @@ type MonitorLanIPShowResp struct {
 			ConnectNum   int    `json:"connect_num"`
 			IpAddr       string `json:"ip_addr"`
 			Download     int    `json:"download"`
-			TotalUp      int64  `json:"total_up"`
-			TotalDown    int64  `json:"total_down"`
+			TotalUp      float64  `json:"total_up"`
+			TotalDown    float64  `json:"total_down"`
 			ClientDevice string `json:"client_device"`
 			Timestamp    int    `json:"timestamp"`
 		} `json:"data"`
@@ -188,8 +188,8 @@ type MonitorIFaceShowResp struct {
 			ConnectNum  string `json:"connect_num"`
 			Upload      int    `json:"upload"`
 			Download    int    `json:"download"`
-			TotalUp     int64  `json:"total_up"`
-			TotalDown   int64  `json:"total_down"`
+			TotalUp     float64  `json:"total_up"`
+			TotalDown   float64  `json:"total_down"`
 			UpDropped   int    `json:"updropped"`
 			DownDropped int    `json:"downdropped"`
 			UpPacked    int    `json:"uppacked"`
